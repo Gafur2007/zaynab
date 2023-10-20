@@ -1,0 +1,7 @@
+@mixin Button {
+    border: none;
+    background-color: var(--color--DarkPink);
+    padding: 16px 26px;
+    border-radius: 24px;
+    color: var(--color--LinkWaterWhite);
+}

@@ -1,0 +1,121 @@
+.hero {
+    position: relative;
+
+
+    .container {
+        max-width: 1110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 75px;
+    }
+
+    .hero__info {
+        width: 100%;
+    }
+
+    .hero__heading {
+        max-width: 546px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: #36536B;
+        font-family: "DM Serif Display";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+    }
+
+    .hero__input {
+        cursor: pointer;
+        margin-top: 21px;
+        padding-left: 27px;
+        width: 445px;
+        height: 48px;
+        border: none;
+        position: relative;
+        border-radius: 24px;
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px var(--color--LightSanJuanBlue);
+
+        &:hover {
+            color: #36536B;
+        }
+    }
+
+    .hero__btn {
+        cursor: pointer;
+        position: absolute;
+        border: none;
+        background-color: var(--color--DarkPink);
+        padding: 16px 26px;
+        border-radius: 24px;
+        color: var(--color--LinkWaterWhite);
+        margin-left: -170px;
+        margin-top: 21px;
+    }
+
+    .hero__p {
+        margin-top: 16px;
+        color: #36536B;
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .hero__img {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero {
+        .container {
+            flex-direction: column;
+            text-align: center;
+            order: calc(-1);
+        }
+    }
+
+    .hero__info {
+        margin-left: 100px;
+    }
+
+    .hero__form {
+        margin-left: -100px;
+    }
+
+    .hero__info {
+        order:calc(1);
+    }
+}
+
+@media only screen and (max-width:649px) {
+    .hero__info {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero__form {
+        margin-left: 50px;
+    }
+
+    .hero__input {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero__btn {
+        width: 350px;
+    }
+
+    .hero__p {
+        padding-top: 74px;
+    }
+}
